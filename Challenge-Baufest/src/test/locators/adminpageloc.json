@@ -1,0 +1,59 @@
+{
+  "adminMenu": {
+    "locator": "//*/span[contains(@class, 'oxd-main-menu-item--name') and text()='Admin']"
+  },
+
+  "addButton": {
+    "locator": "(//*/button[contains(@type, 'button')])[5]"
+  },
+
+  "userRoleComboBox": {
+    "locator": "(//*/div[contains(@class, 'oxd-select-text')])[1]"
+  },
+  "adminOption":{
+    "locator":"(//*/div[contains(@class, 'oxd-select-option')])[2]"
+  },
+  "essOption":{
+    "locator":"(//*/div[contains(@class, 'oxd-select-option')])[3]"
+  },
+  "employeeNameTextField": {
+    "locator": "[placeholder='Type for hints...']"
+  },
+  "employeeOption":{
+    "locator":"(//*/div[contains(@class, 'oxd-autocomplete-option')])[1]"
+  },
+  "statusComboBox": {
+    "locator": "(//*/div[contains(@class, 'oxd-select-text')])[4]"
+  },
+  "enabledOption":{
+    "locator":"(//*/div[contains(@class, 'oxd-select-option')])[2]"
+  },
+  "disabledOption":{
+    "locator":"(//*/div[contains(@class, 'oxd-select-option')])[3]"
+  },
+  "usernameTextField": {
+    "locator": "(//*/input[contains(@class,'oxd-input')])[2]"
+  },
+  "passwordTextField": {
+    "locator": "(//*/input[contains(@class,'oxd-input')])[3]"
+  },
+  "confirmPasswordTextField": {
+    "locator": "(//*/input[contains(@class,'oxd-input')])[4]"
+  },
+  "saveButton": {
+    "locator": "button[type='submit']"
+  },
+  "usernameGridRow":{
+    "locator": ""
+  },
+  "userRoleGridRow":{
+    "locator":""
+  },
+  "employeeNameGridRow":{
+    "locator":""
+  },
+  "statusGridRow":{
+    "locator": ""
+  }
+
+}

@@ -1,0 +1,14 @@
+{
+    "usernameTextField":{
+        "locator": "input[name='username']"
+    },
+    "passwordTextField":{
+        "locator":"input[name='password']"
+    },
+    "loginButton":{
+        "locator":"button[type='submit']"
+    },
+    "credentialsAlert":{
+        "locator":".oxd-alert-content-text"
+    }
+}

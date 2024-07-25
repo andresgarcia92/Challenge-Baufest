@@ -1,0 +1,325 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "add-user-tests;add-user-successfully",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Add user successfully",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 901646125
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "User goes to Admin page",
+            "match": {
+              "location": "src/test/steps/adminpage.spec.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10073633540
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "user selects the User Role \"<FakeRole>\"",
+            "match": {
+              "location": "src/test/steps/adminpage.spec.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3275539332
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "user fills in the Employee Name field with \"<FakeName>\"",
+            "match": {
+              "location": "src/test/steps/adminpage.spec.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3083817250
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "user selects the Status \"<FakeStatus>\"",
+            "match": {
+              "location": "src/test/steps/adminpage.spec.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3050936292
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "user fills in the Username field with \"<FakeUser>\"",
+            "match": {
+              "location": "src/test/steps/adminpage.spec.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22187624
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "user fills in the Password field with \"<FakePass>\"",
+            "match": {
+              "location": "src/test/steps/adminpage.spec.ts:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 52007666
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "user fills in the Confirm Password field with \"<FakePass>\"",
+            "match": {
+              "location": "src/test/steps/adminpage.spec.ts:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7342499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "user clicks the Save button",
+            "match": {
+              "location": "src/test/steps/adminpage.spec.ts:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26065084
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "new user is added successfully",
+            "match": {
+              "location": "src/test/steps/adminpage.spec.ts:60"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3018773832
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 75112959
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@addUser",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "add-user-tests",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Add User Tests",
+    "tags": [
+      {
+        "name": "@addUser",
+        "line": 1
+      }
+    ],
+    "uri": "src/test/features/addUser.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "user-authentication-tests;user-with-correct-credentials",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "User with correct credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 473597834
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "User goes to the webpage",
+            "match": {
+              "location": "src/test/steps/loginpage.spec.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2134999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "User enters \"Admin\" and \"admin123\"",
+            "match": {
+              "location": "src/test/steps/loginpage.spec.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11274254249
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "User is logged in",
+            "match": {
+              "location": "src/test/steps/loginpage.spec.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32437166
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 50628583
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-authentication-tests;user-with-incorrect-credentials",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "User with incorrect credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 472159458
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "User goes to the webpage",
+            "match": {
+              "location": "src/test/steps/loginpage.spec.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2154167
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "User enters wrong credentials \"Test1\" and \"admin777\"",
+            "match": {
+              "location": "src/test/steps/loginpage.spec.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10402914959
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "User is not logged in",
+            "match": {
+              "location": "src/test/steps/loginpage.spec.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 831216791
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 54513707
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "user-authentication-tests",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "User Authentication Tests",
+    "tags": [
+      {
+        "name": "@login",
+        "line": 1
+      }
+    ],
+    "uri": "src/test/features/login.feature"
+  }
+]
