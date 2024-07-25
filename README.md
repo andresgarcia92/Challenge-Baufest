@@ -44,3 +44,15 @@ solicitada.
 - Debe aplicar un patrón de diseño.
 
 - Utilice redacción con lenguaje gherkin.
+
+
+# Casos de prueba:
+Se redactaron los siguientes casos de prueba en base a las pantallas asociadas a las funciones solicitadas(Login y Add User):
+
+<img width="702" alt="Screenshot 2024-07-25 at 3 45 05 PM" src="https://github.com/user-attachments/assets/c3ec0d9e-190a-486a-ac48-9e7463a453e3">
+
+<img width="705" alt="Screenshot 2024-07-25 at 3 53 11 PM" src="https://github.com/user-attachments/assets/803cd5fb-6e7e-4719-9b9e-e2c4f99ba40a">
+
+<img width="703" alt="Screenshot 2024-07-25 at 3 53 35 PM" src="https://github.com/user-attachments/assets/ac4670b3-c689-4e48-8ecb-89aeff7740fa">
+
+
