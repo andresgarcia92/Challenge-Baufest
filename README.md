@@ -133,3 +133,45 @@ Examples:
 
 <img width="702" alt="Screenshot 2024-07-25 at 4 21 08 PM" src="https://github.com/user-attachments/assets/8e824345-19c6-4b85-9104-106173a7375e">
 
+# Instalacion
+
+El framework ha sido implementado usando el patrón de diseño Page Object Model(POM), separando los features, tests, locators, metodos y otros en distintas clases para un mejor entendimiento y mantenimiento del codigo y bajo enfoque de desarrollo BDD y lenguaje Gherkin
+
+![image](https://github.com/user-attachments/assets/37777e8c-2bac-4f5e-9f51-e5331e1b21e8)
+
+
+<img width="1036" alt="Screenshot 2024-07-25 at 4 38 22 PM" src="https://github.com/user-attachments/assets/1d680d0b-e42d-470a-9b93-ded7673d71fa">
+
+
+1.Contar con VS Code 
+
+2.Instalar las extensiones de Playwright y Cucumber en VS Code
+
+3.Setear navegadores en playwright desde VS Code o en la terminal con el comando "npm init playwright@latest --yes -- --quiet --browser=chromium --browser=firefox --browser=webkit --gha
+
+4.Instalar dependencias:
+
+- Instalar node.js
+
+- npm i @cucumber/cucumber -D
+
+- npm i ts-node -D
+
+- npm i cucumber-html-reporter -D
+
+- npm i @playwright/test -D
+
+- npm i typescript -D 
+
+5.Crear el package.json ejecuando npm init
+
+
+#Ejecucion de las pruebas:
+
+1.Correr el comando npm test desde la terminal para ejecutar todos los casos de prueba
+
+2.Correr el comando npx cucumber-js --tags "@addUser" para ejecutar solo los casos de Add User
+
+3.Correr el comando npx cucumber-js --tags "@login" para ejecutar solo los casos de login
+
+4.Correr el comando npm run test-report para generar el reporte de cucumber
