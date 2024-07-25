@@ -53,6 +53,31 @@ Se redactaron los siguientes casos de prueba en base a las pantallas asociadas a
 
 <img width="705" alt="Screenshot 2024-07-25 at 3 53 11 PM" src="https://github.com/user-attachments/assets/803cd5fb-6e7e-4719-9b9e-e2c4f99ba40a">
 
+Ambos casos candidatos a automatizar, se redactaron los escenarios en lenguaje Gherkin:
+
+@login
+Feature: User Authentication Tests
+
+Background: Login page
+Given User goes to the webpage
+
+Scenario: User with correct credentials
+When User enters "<USERNAME>" and "<PASSWORD>"
+Then User is logged in
+
+Examples:
+        |   USERNAME      |   PASSWORD |
+        |   Admin         |   admin123 |
+
+Scenario: User with incorrect credentials
+When User enters wrong credentials "<USERNAME>" and "<PASSWORD>"
+Then User is not logged in
+
+Examples:
+        |   USERNAME      |   PASSWORD |
+        |   Test1         |   admin777 |
+
+
 <img width="703" alt="Screenshot 2024-07-25 at 3 53 35 PM" src="https://github.com/user-attachments/assets/ac4670b3-c689-4e48-8ecb-89aeff7740fa">
 
 
