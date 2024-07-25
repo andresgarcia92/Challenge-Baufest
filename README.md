@@ -49,6 +49,8 @@ solicitada.
 # Casos de prueba:
 Se redactaron los siguientes casos de prueba en base a las pantallas asociadas a las funciones solicitadas(Login y Add User):
 
+1.Login:
+
 <img width="702" alt="Screenshot 2024-07-25 at 3 45 05 PM" src="https://github.com/user-attachments/assets/c3ec0d9e-190a-486a-ac48-9e7463a453e3">
 
 <img width="705" alt="Screenshot 2024-07-25 at 3 53 11 PM" src="https://github.com/user-attachments/assets/803cd5fb-6e7e-4719-9b9e-e2c4f99ba40a">
@@ -89,4 +91,45 @@ Examples:
 
 <img width="703" alt="Screenshot 2024-07-25 at 3 53 35 PM" src="https://github.com/user-attachments/assets/ac4670b3-c689-4e48-8ecb-89aeff7740fa">
 
+
+2.Add User:
+
+<img width="702" alt="Screenshot 2024-07-25 at 4 20 27 PM" src="https://github.com/user-attachments/assets/ef39a7dd-024c-4df5-bc8e-adc03723c578">
+
+Caso candidato a automatizar
+
+@addUser
+
+Feature: Add User Tests
+
+Background: Admin page
+
+  Given User goes to Admin page
+
+Scenario: Add user successfully
+
+  When user selects the User Role "<UserRole>"
+  
+    And user fills in the Employee Name field with "<EmployeeName>"
+    
+    And user selects the Status "<Status>"
+    
+    And user fills in the Username field with "<Username>"
+    
+    And user fills in the Password field with "<Password>"
+    
+    And user fills in the Confirm Password field with "<Password>"
+    
+    And user clicks the Save button
+    
+    Then new user is added successfully
+    
+
+Examples:
+
+  | UserRole    | EmployeeName | Username  | Password   | Status       |
+  | <FakeRole>  | <FakeName>   | <FakeUser>| <FakePass> | <FakeStatus> |
+
+
+<img width="702" alt="Screenshot 2024-07-25 at 4 21 08 PM" src="https://github.com/user-attachments/assets/8e824345-19c6-4b85-9104-106173a7375e">
 
